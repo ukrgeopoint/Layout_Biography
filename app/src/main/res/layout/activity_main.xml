@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/CLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineV"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintGuide_percent="0.05"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineV2"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineV3"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintGuide_percent="0.95"/>
+
+    <ImageView
+        android:id="@+id/bgView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/lars_ulrich"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@id/CLayout"
+        app:layout_constraintEnd_toEndOf="@id/CLayout"
+        app:layout_constraintTop_toTopOf="@+id/CLayout"
+        android:contentDescription="@string/background"/>
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/lars_ulrich1"
+        app:layout_constraintStart_toStartOf="@id/guidelineV"
+        app:layout_constraintTop_toBottomOf="@id/bgView"
+        app:layout_constraintBottom_toBottomOf="@id/bgView"
+        android:contentDescription="@string/biography_image"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:paddingTop="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/profession"
+        app:layout_constraintStart_toStartOf="@id/guidelineV2"
+        app:layout_constraintTop_toBottomOf="@id/bgView"/>
+
+    <TextView
+        android:id="@+id/profession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profession"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        app:layout_constraintBottom_toBottomOf="@id/imgView"
+        app:layout_constraintStart_toStartOf="@id/guidelineV2"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/Lars_Ulrich"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/CLayout"
+        app:layout_constraintEnd_toEndOf="@id/guidelineV3"
+        app:layout_constraintStart_toEndOf="@id/guidelineV"
+        app:layout_constraintTop_toBottomOf="@id/bgView"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/WriteOrCall"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/email"
+        app:layout_constraintEnd_toEndOf="@id/guidelineV3"
+        app:layout_constraintStart_toEndOf="@id/guidelineV"
+        app:layout_constraintTop_toBottomOf="@id/textView"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:height="48dp"
+        app:layout_constraintStart_toStartOf="@id/guidelineV2"
+        app:layout_constraintBottom_toBottomOf="@id/CLayout"
+        app:layout_constraintEnd_toStartOf="@id/phone"/>
+
+    <TextView
+        android:id="@+id/phone"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:height="48dp"
+        app:layout_constraintStart_toEndOf="@id/email"
+        app:layout_constraintBottom_toBottomOf="@id/CLayout"
+        app:layout_constraintEnd_toStartOf="@id/guidelineV3"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

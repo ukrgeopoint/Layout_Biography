@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">XMLTESTLAYOUT</string>
+    <string name="background">Background</string>
+    <string name="biography_image">Biography Image</string>
+    <string name="Lars_Ulrich">Lars Ulrich born 26 December 1963 is a Danish musician who is the drummer and co-founder of American heavy metal band Metallica.
+        Along with James Hetfield, Ulrich has songwriting credits on almost all of the band\'s songs, and the two of them are the only remaining original members of the band.
+        He played tennis in his youth and moved to Los Angeles at age 16 to train professionally.
+        However, rather than playing tennis, Ulrich began playing drums. After publishing an advertisement in The Recycler, Ulrich met Hetfield and formed Metallica.</string>
+    <string name="name">Lars Ulrich</string>
+    <string name="profession">Drummer</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="WriteOrCall">I\'m looking for a job. Click to write or call me!</string>
+</resources>
